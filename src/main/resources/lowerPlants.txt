@@ -1,0 +1,16 @@
+Pinus sylvestris,Сосна обыкновенная,Хвойное дерево,Pinus
+Pinus nigra,Сосна черная,Хвойное дерево,Pinus
+Rosa canina,Шиповник собачий,Кустарник с розовыми цветками,Rosa
+Rosa rugosa,Роза морщинистая,Кустарник с крупными цветками,Rosa
+Helianthus annuus,Подсолнечник однолетний,Крупное растение с желтыми цветками,Helianthus
+Helianthus tuberosus,Топинамбур,Корневищное растение с желтыми цветками,Helianthus
+Triticum aestivum,Пшеница мягкая,Злак, важный для сельского хозяйства,Triticum
+Triticum durum,Пшеница твердая,Злак, используемый для производства макаронных изделий,Triticum
+Chlorella vulgaris,Зеленая водоросль,Одноклеточная водоросль,Chlorella
+Spirogyra spp.,Спирогира,Нитчатая зеленая водоросль,Spirogyra
+Euglena gracilis,Эuglena,Одноклеточная водоросль с хлоропластами,Euglena
+Fucus vesiculosus,Морская капуста,Бурые водоросли,Fucus
+Ascophyllum nodosum,Морская салатка,Бурые водоросли,Ascophyllum
+Porphyra tenera,Нори,Красная водоросль,Porphyra
+Ulva lactuca,Латук водорослей,Плоская зеленая водоросль,Ulva
+Phaeophyceae,Бурые водоросли,Группа морских водорослей,Phaeophyceae
