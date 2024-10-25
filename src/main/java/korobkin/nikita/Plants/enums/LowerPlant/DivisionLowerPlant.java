@@ -2,7 +2,7 @@ package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.enums.SubkingdomPlant;
 import korobkin.nikita.Plants.interfaces.Division;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum DivisionLowerPlant implements Taxon, Division {
     CHLOROPHYTA("Зеленые водоросли",

@@ -13,8 +13,8 @@ import java.util.List;
 
 public class SpeciesPlantLoader {
 
-    public List<Species> loadSpeciesFromFile(String fileName) throws IOException {
-        List<Species> speciesList = new ArrayList<>();
+    public List<SpeciePlant> loadSpeciesFromFile(String fileName) throws IOException {
+        List<SpeciePlant> speciesList = new ArrayList<>();
 
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
         if (inputStream == null) {
@@ -36,7 +36,7 @@ public class SpeciesPlantLoader {
 
                     // Если род найден, создаем объект вида
                     if (genus != null) {
-                        Species species = new Species(scientificName, commonName, description, genus);
+                        SpeciePlant species = new SpeciePlant(scientificName, commonName, description, genus);
                         speciesList.add(species);
                     } else {
                         System.out.println("Род не найден: " + genusName);

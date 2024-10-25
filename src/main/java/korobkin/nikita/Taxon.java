@@ -1,4 +1,4 @@
-package korobkin.nikita.Plants.interfaces;
+package korobkin.nikita;
 
 public interface Taxon {
     String getName();

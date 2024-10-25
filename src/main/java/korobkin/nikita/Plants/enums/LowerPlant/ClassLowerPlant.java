@@ -1,7 +1,7 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfaces.PlantClass;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum ClassLowerPlant implements Taxon, PlantClass {
     //Классы зеленых водорослей

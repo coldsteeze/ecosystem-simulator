@@ -1,7 +1,7 @@
 package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.interfaces.PlantClass;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum ClassHigherPlant implements Taxon, PlantClass {
     //Классы папоротниковидных

@@ -1,7 +1,7 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfaces.Order;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum OrderLowerPlant implements Taxon, Order {
     //Порядки зеленых водорослей

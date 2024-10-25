@@ -1,15 +1,14 @@
 package korobkin.nikita.Plants;
 
-import korobkin.nikita.Plants.enums.HigherPlant.GenusHigherPlant;
 import korobkin.nikita.Plants.interfaces.Genus;
 
-public class Species {
+public class SpeciePlant {
     private final String scientificName;
     private final String commonName;
     private final String description;
     private final Genus genus;
 
-    public Species(String scientificName, String commonName, String description, Genus genus) {
+    public SpeciePlant(String scientificName, String commonName, String description, Genus genus) {
         this.scientificName = scientificName;
         this.commonName = commonName;
         this.description = description;
@@ -45,6 +44,6 @@ public class Species {
         System.out.println("Порядок: " + genus.getFamily().getOrder().getDescription());
         System.out.println("Семейство: " + genus.getFamily().getDescription());
         System.out.println("Род: " + genus.getDescription());
-        System.out.println(toString());
+        System.out.println(this);
     }
 }

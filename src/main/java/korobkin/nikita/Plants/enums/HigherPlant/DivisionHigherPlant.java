@@ -2,7 +2,7 @@ package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.enums.SubkingdomPlant;
 import korobkin.nikita.Plants.interfaces.Division;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum DivisionHigherPlant implements Taxon, Division {
     POLYPODIOPHYTA("Папоротниковидные",

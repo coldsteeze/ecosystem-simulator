@@ -1,6 +1,6 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 import korobkin.nikita.Plants.interfaces.Genus;
 
 public enum GenusLowerPlant implements Taxon, Genus{

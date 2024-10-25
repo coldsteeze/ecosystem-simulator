@@ -1,7 +1,7 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfaces.Family;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum FamilyLowerPlant implements Taxon, Family {
     //Семейства зеленых водорослей

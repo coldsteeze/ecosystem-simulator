@@ -1,7 +1,7 @@
 package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.interfaces.Family;
-import korobkin.nikita.Plants.interfaces.Taxon;
+import korobkin.nikita.Taxon;
 
 public enum FamilyHigherPlant implements Taxon, Family {
 
