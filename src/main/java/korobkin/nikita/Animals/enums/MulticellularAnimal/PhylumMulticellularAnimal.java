@@ -1,7 +1,7 @@
 package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
 
-import korobkin.nikita.Animals.SubkingdomAnimal;
+import korobkin.nikita.Animals.enums.SubkingdomAnimal;
 import korobkin.nikita.Animals.interfacesAnimal.IPhylumAnimal;
 
 public enum PhylumMulticellularAnimal implements IPhylumAnimal {

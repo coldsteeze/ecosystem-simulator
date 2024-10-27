@@ -35,4 +35,15 @@ public class Species<G extends TaxonomyGenus<?>> {
     public String toString() {
         return "Вид: " + scientificName + " (" + commonName + ") - " + description + ", Род: " + genus.getName();
     }
+
+    public void printTaxonomicHierarchy() {
+        System.out.println("Царство: " + genus.getFamily().getOrder().getInfoAboutClass().getPhylum().getSubkingdom().getKingdom().getDescription());
+        System.out.println("Подцарство: " + genus.getFamily().getOrder().getInfoAboutClass().getPhylum().getSubkingdom().getDescription());
+        System.out.println("Отдел: " + genus.getFamily().getOrder().getInfoAboutClass().getPhylum().getDescription());
+        System.out.println("Класс: " + genus.getFamily().getOrder().getInfoAboutClass().getDescription());
+        System.out.println("Порядок: " + genus.getFamily().getOrder().getDescription());
+        System.out.println("Семейство: " + genus.getFamily().getDescription());
+        System.out.println("Род: " + genus.getDescription());
+        System.out.println(this);
+    }
 }

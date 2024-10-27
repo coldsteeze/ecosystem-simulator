@@ -13,7 +13,10 @@ public class Main {
 
         try {
             List<Species<?>> speciesList = loader.loadSpeciesFromFile("lowerPlants.txt");
-            speciesList.forEach(System.out::println);
+            for (Species<?> species : speciesList) {
+                System.out.println(species);
+                species.printTaxonomicHierarchy();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

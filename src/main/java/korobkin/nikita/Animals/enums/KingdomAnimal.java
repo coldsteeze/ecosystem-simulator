@@ -1,4 +1,4 @@
-package korobkin.nikita.Animals;
+package korobkin.nikita.Animals.enums;
 
 import korobkin.nikita.TaxonomyInterfaces.TaxonomyKingdom;
 
