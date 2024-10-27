@@ -1,39 +1,38 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
-import korobkin.nikita.Plants.interfaces.PlantClass;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IPlantClass;
 
-public enum ClassLowerPlant implements Taxon, PlantClass {
+public enum ClassLowerPlant implements IPlantClass {
     //Классы зеленых водорослей
     CHLOROPHYCEAE("Хлорофициевые",
             "Одноклеточные и многоклеточные водоросли.",
-            DivisionLowerPlant.CHLOROPHYTA),
+            DivisionPlantLowerPlant.CHLOROPHYTA),
 
 
     ULVOPHYCEAE("Ульвофициевые",
             "В основном морские многоклеточные водоросли.",
-            DivisionLowerPlant.CHLOROPHYTA),
+            DivisionPlantLowerPlant.CHLOROPHYTA),
 
     ZYGNEMATOPHYCEAE("Конъюгатофициевые",
             "Пресноводные, преимущественно многоклеточные водоросли.",
-            DivisionLowerPlant.CHLOROPHYTA),
+            DivisionPlantLowerPlant.CHLOROPHYTA),
 
     //Классы бурых водорослей
     PHAEOPHYCEAE("Бурые водоросли",
             "Все бурые водоросли.",
-            DivisionLowerPlant.PHAEOPHYTA),
+            DivisionPlantLowerPlant.PHAEOPHYTA),
 
     //Классы красных водорослей
     FLORIDEOPHYCEAE("Красные водоросли",
             "Многоклеточные формы, обитающие в основном в морской воде.",
-            DivisionLowerPlant.RHODOPHYTA);
+            DivisionPlantLowerPlant.RHODOPHYTA);
 
 
     private final String name;
     private final String description;
-    private final DivisionLowerPlant division;
+    private final DivisionPlantLowerPlant division;
 
-    ClassLowerPlant(String name, String description, DivisionLowerPlant division) {
+    ClassLowerPlant(String name, String description, DivisionPlantLowerPlant division) {
         this.name = name;
         this.description = description;
         this.division = division;
@@ -47,7 +46,7 @@ public enum ClassLowerPlant implements Taxon, PlantClass {
         return description;
     }
 
-    public DivisionLowerPlant getDivision() {
+    public DivisionPlantLowerPlant getPhylum() {
         return division;
     }
 }

@@ -2,10 +2,9 @@ package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
 
 import korobkin.nikita.Animals.SubkingdomAnimal;
-import korobkin.nikita.Animals.interfaces.Phylum;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Animals.interfacesAnimal.IPhylumAnimal;
 
-public enum PhylumMulticellularAnimal implements Taxon, Phylum {
+public enum PhylumMulticellularAnimal implements IPhylumAnimal {
     CHORDATA("Хордовые", "Животные, имеющие хорду на каком-то этапе развития.", SubkingdomAnimal.MULTICELLULAR),
     ARTHROPODA("Членистоногие", "Животные с внешним скелетом и сегментированным телом.", SubkingdomAnimal.MULTICELLULAR),
     MOLLUSCA("Моллюски", "Животные с мягким телом, часто имеющие раковину.", SubkingdomAnimal.MULTICELLULAR),
@@ -22,7 +21,6 @@ public enum PhylumMulticellularAnimal implements Taxon, Phylum {
         this.subkingdom = subkingdom;
     }
 
-    @Override
     public String getName() {
         return name;
     }

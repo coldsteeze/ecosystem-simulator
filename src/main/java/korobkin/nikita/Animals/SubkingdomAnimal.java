@@ -1,6 +1,8 @@
 package korobkin.nikita.Animals;
 
-public enum SubkingdomAnimal {
+import korobkin.nikita.Animals.interfacesAnimal.ISubkingdomAnimal;
+
+public enum SubkingdomAnimal implements ISubkingdomAnimal {
     SINGLECELLULAR("Одноклеточные", KingdomAnimal.ANIMALIA),
     MULTICELLULAR("Многоклеточные", KingdomAnimal.ANIMALIA),;
 
@@ -12,7 +14,7 @@ public enum SubkingdomAnimal {
         this.kingdomAnimal = kingdomAnimal;
     }
 
-    public KingdomAnimal getKingdomAnimal() {
+    public KingdomAnimal getKingdom() {
         return kingdomAnimal;
     }
 

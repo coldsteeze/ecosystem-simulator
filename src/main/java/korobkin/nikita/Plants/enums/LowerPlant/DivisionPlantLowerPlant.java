@@ -1,10 +1,9 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.enums.SubkingdomPlant;
-import korobkin.nikita.Plants.interfaces.Division;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IDivisionPlant;
 
-public enum DivisionLowerPlant implements Taxon, Division {
+public enum DivisionPlantLowerPlant implements IDivisionPlant {
     CHLOROPHYTA("Зеленые водоросли",
             "Фотосинтезирующие организмы, обитающие как в пресных, так и в морских водах.",
             SubkingdomPlant.LOWER_PLANTS),
@@ -22,7 +21,7 @@ public enum DivisionLowerPlant implements Taxon, Division {
     private final String description;
     private final SubkingdomPlant subkingdom;
 
-    DivisionLowerPlant(String name, String description, SubkingdomPlant subkingdom) {
+    DivisionPlantLowerPlant(String name, String description, SubkingdomPlant subkingdom) {
         this.name = name;
         this.description = description;
         this.subkingdom = subkingdom;

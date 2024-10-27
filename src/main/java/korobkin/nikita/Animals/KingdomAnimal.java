@@ -1,6 +1,8 @@
 package korobkin.nikita.Animals;
 
-public enum KingdomAnimal {
+import korobkin.nikita.TaxonomyInterfaces.TaxonomyKingdom;
+
+public enum KingdomAnimal implements TaxonomyKingdom {
     ANIMALIA("Животные");
     private final String description;
 

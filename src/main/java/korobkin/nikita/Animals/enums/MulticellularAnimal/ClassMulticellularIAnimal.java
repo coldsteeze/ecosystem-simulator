@@ -1,9 +1,8 @@
 package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
-import korobkin.nikita.Animals.interfaces.AnimalClass;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Animals.interfacesAnimal.IAnimalClass;
 
-public enum ClassMulticellularAnimal implements Taxon, AnimalClass {
+public enum ClassMulticellularIAnimal implements IAnimalClass {
     // Классы для типа Хордовые
     MAMMALIA("Млекопитающие", "Теплокровные животные с волосами и молочными железами.", PhylumMulticellularAnimal.CHORDATA),
     AVES("Птицы", "Животные с перьями и клювом.", PhylumMulticellularAnimal.CHORDATA),
@@ -25,13 +24,12 @@ public enum ClassMulticellularAnimal implements Taxon, AnimalClass {
     private final String description;
     private final PhylumMulticellularAnimal phylum;
 
-    ClassMulticellularAnimal(String name, String description, PhylumMulticellularAnimal phylum) {
+    ClassMulticellularIAnimal(String name, String description, PhylumMulticellularAnimal phylum) {
         this.name = name;
         this.description = description;
         this.phylum = phylum;
     }
 
-    @Override
     public String getName() {
         return name;
     }

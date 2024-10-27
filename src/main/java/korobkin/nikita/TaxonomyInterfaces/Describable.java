@@ -1,4 +1,4 @@
-package korobkin.nikita.Plants.interfaces;
+package korobkin.nikita.TaxonomyInterfaces;
 
 public interface Describable {
     String getDescription();

@@ -1,5 +1,7 @@
 package korobkin.nikita.Plants.enums;
-public enum KingdomPlant {
+import korobkin.nikita.TaxonomyInterfaces.TaxonomyKingdom;
+
+public enum KingdomPlant implements TaxonomyKingdom {
     PLANTAE("Растения");
 
     private final String description;

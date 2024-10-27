@@ -1,9 +1,8 @@
 package korobkin.nikita.Plants.enums.HigherPlant;
 
-import korobkin.nikita.Plants.interfaces.PlantClass;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IPlantClass;
 
-public enum ClassHigherPlant implements Taxon, PlantClass {
+public enum ClassHigherPlant implements IPlantClass {
     //Классы папоротниковидных
     POLYPODIOPSIDA("Папоротниковые",
             "Основной класс папоротников.",
@@ -68,7 +67,5 @@ public enum ClassHigherPlant implements Taxon, PlantClass {
         return description;
     }
 
-    public DivisionHigherPlant getDivision() {
-        return division;
-    }
+    public DivisionHigherPlant getPhylum() { return division; }
 }

@@ -1,9 +1,9 @@
 package korobkin.nikita.Plants.enums.HigherPlant;
 
-import korobkin.nikita.Plants.interfaces.Family;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IFamilyPlant;
 
-public enum FamilyHigherPlant implements Taxon, Family {
+
+public enum FamilyPlantHigherPlant implements IFamilyPlant {
 
     // Семейства папоротниковых
     POLYPODIACEAE("Полиподиевые",
@@ -116,7 +116,7 @@ public enum FamilyHigherPlant implements Taxon, Family {
     private final String description;
     private final OrderHigherPlant order;
 
-    FamilyHigherPlant(String name, String description, OrderHigherPlant order) {
+    FamilyPlantHigherPlant(String name, String description, OrderHigherPlant order) {
         this.name = name;
         this.description = description;
         this.order = order;

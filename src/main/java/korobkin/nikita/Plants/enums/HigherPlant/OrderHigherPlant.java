@@ -1,9 +1,9 @@
 package korobkin.nikita.Plants.enums.HigherPlant;
 
-import korobkin.nikita.Plants.interfaces.Order;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IOrderPlant;
 
-public enum OrderHigherPlant implements Taxon, Order {
+
+public enum OrderHigherPlant implements IOrderPlant {
     //Порядки папоротниковых
     POLYPODIALES("Полиподиевые",
             "Самый распространенный порядок папоротников," +
@@ -119,7 +119,7 @@ public enum OrderHigherPlant implements Taxon, Order {
         return description;
     }
 
-    public ClassHigherPlant getPlantClass() {
+    public ClassHigherPlant getInfoAboutClass() {
         return plantClass;
     }
 }

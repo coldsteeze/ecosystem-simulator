@@ -1,43 +1,42 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
-import korobkin.nikita.Plants.interfaces.Family;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IFamilyPlant;
 
-public enum FamilyLowerPlant implements Taxon, Family {
+public enum FamilyPlantLowerPlant implements IFamilyPlant {
     //Семейства зеленых водорослей
     VOLVOCACEAE("Вольвоковые",
             "Включает вольвокс и его родственников, которые образуют колонии."
-            , OrderLowerPlant.VOLVOCALES),
+            , OrderPlantLowerPlant.VOLVOCALES),
 
     ULOTRICHACEAE("Улотриксовые",
                         "Водоросли, такие как улотрикс, обитают в пресной воде и влажных местообитаниях."
-                        , OrderLowerPlant.ULVALES),
+                        , OrderPlantLowerPlant.ULVALES),
 
     //Семейства бурых водорослей
     LAMINARIACEAE("Ламинариевые",
             "Ламинария или морская капуста, крупные бурые водоросли, обитающие в холодных морях."
-            , OrderLowerPlant.LAMINARIALES),
+            , OrderPlantLowerPlant.LAMINARIALES),
 
     FUCACEAE("Фукуссовые",
             "Фукус, характерный для побережий морей с соленой водой."
-            , OrderLowerPlant.FUCALES),
+            , OrderPlantLowerPlant.FUCALES),
 
     //Семейства красных водорослей
     PHYLLOPHORACEAE("Филлофоровые",
             "Включает водоросли, такие как филлофора," +
                     " обитающие в глубоких водах и используемые для производства агара."
-            , OrderLowerPlant.GIGARTINALES),
+            , OrderPlantLowerPlant.GIGARTINALES),
 
     CORALLINACEAE("Кораллтиновые",
             "Это кальцинированные красные водоросли," +
                     " которые образуют кораллообразные структуры в тропических морях."
-            , OrderLowerPlant.CORALLINALES);
+            , OrderPlantLowerPlant.CORALLINALES);
 
     private final String name;
     private final String description;
-    private final OrderLowerPlant order;
+    private final OrderPlantLowerPlant order;
 
-    FamilyLowerPlant(String name, String description, OrderLowerPlant order) {
+    FamilyPlantLowerPlant(String name, String description, OrderPlantLowerPlant order) {
         this.name = name;
         this.description = description;
         this.order = order;
@@ -51,7 +50,7 @@ public enum FamilyLowerPlant implements Taxon, Family {
         return description;
     }
 
-    public OrderLowerPlant getOrder() {
+    public OrderPlantLowerPlant getOrder() {
         return order;
     }
 }

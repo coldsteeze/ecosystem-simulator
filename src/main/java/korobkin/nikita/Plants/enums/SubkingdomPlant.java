@@ -1,5 +1,9 @@
 package korobkin.nikita.Plants.enums;
-public enum SubkingdomPlant {
+
+
+import korobkin.nikita.Plants.interfacesPlant.ISubkingdomPlant;
+
+public enum SubkingdomPlant implements ISubkingdomPlant {
     HIGHER_PLANTS("Высшие растения", KingdomPlant.PLANTAE),
     LOWER_PLANTS("Низшие растения", KingdomPlant.PLANTAE);
 
@@ -13,9 +17,9 @@ public enum SubkingdomPlant {
 
     public String getDescription() {
             return description;
-        }
+    }
 
-    public KingdomPlant getKingdomPlant() {
+    public KingdomPlant getKingdom() {
         return kingdomPlant;
     }
 }

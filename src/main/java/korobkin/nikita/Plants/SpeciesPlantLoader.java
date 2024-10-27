@@ -1,8 +1,8 @@
 package korobkin.nikita.Plants;
 
-import korobkin.nikita.Plants.enums.HigherPlant.GenusHigherPlant;
-import korobkin.nikita.Plants.enums.LowerPlant.GenusLowerPlant;
-import korobkin.nikita.Plants.interfaces.Genus;
+import korobkin.nikita.Plants.enums.HigherPlant.GenusPlantHigherPlant;
+import korobkin.nikita.Plants.enums.LowerPlant.GenusPlantLowerPlant;
+import korobkin.nikita.Plants.interfacesPlant.IGenusPlant;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,11 +32,11 @@ public class SpeciesPlantLoader {
                     String genusName = parts[3].trim();
 
                     // Используем общий метод для поиска рода
-                    Genus genus = findGenusByName(genusName);
+                    IGenusPlant IGenusPlant = findGenusByName(genusName);
 
                     // Если род найден, создаем объект вида
-                    if (genus != null) {
-                        SpeciePlant species = new SpeciePlant(scientificName, commonName, description, genus);
+                    if (IGenusPlant != null) {
+                        SpeciePlant species = new SpeciePlant(scientificName, commonName, description, IGenusPlant);
                         speciesList.add(species);
                     } else {
                         System.out.println("Род не найден: " + genusName);
@@ -50,14 +50,14 @@ public class SpeciesPlantLoader {
     }
 
     // Метод для поиска рода по имени
-    private Genus findGenusByName(String genusName) {
+    private IGenusPlant findGenusByName(String genusName) {
         try {
             // Пытаемся найти род в высших растениях
-            return GenusHigherPlant.valueOf(genusName.toUpperCase());
+            return GenusPlantHigherPlant.valueOf(genusName.toUpperCase());
         } catch (IllegalArgumentException e) {
             // Если не нашли в высших растениях, пытаемся найти в низших
             try {
-                return GenusLowerPlant.valueOf(genusName.toUpperCase());
+                return GenusPlantLowerPlant.valueOf(genusName.toUpperCase());
             } catch (IllegalArgumentException ex) {
                 // Род не найден ни в одном из перечислений
                 return null;

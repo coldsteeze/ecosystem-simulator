@@ -1,9 +1,8 @@
 package korobkin.nikita.Plants.enums.LowerPlant;
 
-import korobkin.nikita.Plants.interfaces.Order;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IOrderPlant;
 
-public enum OrderLowerPlant implements Taxon, Order {
+public enum OrderPlantLowerPlant implements IOrderPlant {
     //Порядки зеленых водорослей
     VOLVOCALES("Вольвокальные",
             "Порядок колониальных водорослей.",
@@ -50,7 +49,7 @@ public enum OrderLowerPlant implements Taxon, Order {
     private final String description;
     private final ClassLowerPlant plantClass;
 
-    OrderLowerPlant(String name, String description, ClassLowerPlant plantClass) {
+    OrderPlantLowerPlant(String name, String description, ClassLowerPlant plantClass) {
         this.name = name;
         this.description = description;
         this.plantClass = plantClass;
@@ -64,7 +63,7 @@ public enum OrderLowerPlant implements Taxon, Order {
         return description;
     }
 
-    public ClassLowerPlant getPlantClass() {
+    public ClassLowerPlant getInfoAboutClass() {
         return plantClass;
     }
 }

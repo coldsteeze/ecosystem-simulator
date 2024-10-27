@@ -1,10 +1,10 @@
 package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.enums.SubkingdomPlant;
-import korobkin.nikita.Plants.interfaces.Division;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Plants.interfacesPlant.IDivisionPlant;
 
-public enum DivisionHigherPlant implements Taxon, Division {
+
+public enum DivisionHigherPlant implements IDivisionPlant {
     POLYPODIOPHYTA("Папоротниковидные",
             "Споровые растения с хорошо развитыми корнями, стеблями и листьями.",
             SubkingdomPlant.HIGHER_PLANTS),

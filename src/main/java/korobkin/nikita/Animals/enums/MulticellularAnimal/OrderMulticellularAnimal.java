@@ -1,35 +1,33 @@
 package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
-import korobkin.nikita.Animals.interfaces.Order;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Animals.interfacesAnimal.IOrderAnimal;
 
-public enum OrderMulticellularAnimal implements Taxon, Order {
+public enum OrderMulticellularAnimal implements IOrderAnimal {
     // Порядки для класса Млекопитающие
-    CARNIVORA("Хищные", "Млекопитающие, питающиеся в основном мясом.", ClassMulticellularAnimal.MAMMALIA),
-    PRIMATES("Приматы", "Млекопитающие с развитыми когнитивными способностями.", ClassMulticellularAnimal.MAMMALIA),
-    RODENTIA("Грызуны", "Млекопитающие с резцами, приспособленными для грызения.", ClassMulticellularAnimal.MAMMALIA),
+    CARNIVORA("Хищные", "Млекопитающие, питающиеся в основном мясом.", ClassMulticellularIAnimal.MAMMALIA),
+    PRIMATES("Приматы", "Млекопитающие с развитыми когнитивными способностями.", ClassMulticellularIAnimal.MAMMALIA),
+    RODENTIA("Грызуны", "Млекопитающие с резцами, приспособленными для грызения.", ClassMulticellularIAnimal.MAMMALIA),
 
     // Порядки для класса Птицы
-    PASSERIFORMES("Воробьинообразные", "Самый крупный порядок птиц.", ClassMulticellularAnimal.AVES),
-    FALCONIFORMES("Соколообразные", "Хищные птицы с острыми когтями и клювом.", ClassMulticellularAnimal.AVES),
-    STRIGIFORMES("Совообразные", "Ночные птицы, такие как совы.", ClassMulticellularAnimal.AVES),
+    PASSERIFORMES("Воробьинообразные", "Самый крупный порядок птиц.", ClassMulticellularIAnimal.AVES),
+    FALCONIFORMES("Соколообразные", "Хищные птицы с острыми когтями и клювом.", ClassMulticellularIAnimal.AVES),
+    STRIGIFORMES("Совообразные", "Ночные птицы, такие как совы.", ClassMulticellularIAnimal.AVES),
 
     // Порядки для класса Насекомые
-    COLEOPTERA("Жесткокрылые", "Насекомые с жесткими передними крыльями.", ClassMulticellularAnimal.INSECTA),
-    LEPIDOPTERA("Чешуекрылые", "Насекомые с крыльями, покрытыми чешуйками (бабочки).", ClassMulticellularAnimal.INSECTA),
-    HYMENOPTERA("Перепончатокрылые", "Насекомые с двумя парами крыльев (пчелы, осы).", ClassMulticellularAnimal.INSECTA);
+    COLEOPTERA("Жесткокрылые", "Насекомые с жесткими передними крыльями.", ClassMulticellularIAnimal.INSECTA),
+    LEPIDOPTERA("Чешуекрылые", "Насекомые с крыльями, покрытыми чешуйками (бабочки).", ClassMulticellularIAnimal.INSECTA),
+    HYMENOPTERA("Перепончатокрылые", "Насекомые с двумя парами крыльев (пчелы, осы).", ClassMulticellularIAnimal.INSECTA);
 
     private final String name;
     private final String description;
-    private final ClassMulticellularAnimal animalClass;
+    private final ClassMulticellularIAnimal animalClass;
 
-    OrderMulticellularAnimal(String name, String description, ClassMulticellularAnimal animalClass) {
+    OrderMulticellularAnimal(String name, String description, ClassMulticellularIAnimal animalClass) {
         this.name = name;
         this.description = description;
         this.animalClass = animalClass;
     }
 
-    @Override
     public String getName() {
         return name;
     }
@@ -39,7 +37,7 @@ public enum OrderMulticellularAnimal implements Taxon, Order {
         return description;
     }
 
-    public ClassMulticellularAnimal getAnimalClass() {
+    public ClassMulticellularIAnimal getInfoAboutClass() {
         return animalClass;
     }
 }

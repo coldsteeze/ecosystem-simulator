@@ -1,10 +1,9 @@
 package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
-import korobkin.nikita.Animals.interfaces.Family;
-import korobkin.nikita.Taxon;
+import korobkin.nikita.Animals.interfacesAnimal.IFamilyAnimal;
 
 
-public enum FamilyMulticellularAnimal implements Taxon, Family {
+public enum FamilyMulticellularAnimal implements IFamilyAnimal {
     // Семейства для порядка Хищные (Carnivora)
     FELIDAE("Кошачьи", "Семейство хищных, включающее львов, тигров, и домашних кошек.", OrderMulticellularAnimal.CARNIVORA),
     CANIDAE("Псовые", "Семейство хищных, включающее волков, лис и собак.", OrderMulticellularAnimal.CARNIVORA),
@@ -36,7 +35,6 @@ public enum FamilyMulticellularAnimal implements Taxon, Family {
         this.order = order;
     }
 
-    @Override
     public String getName() {
         return name;
     }
