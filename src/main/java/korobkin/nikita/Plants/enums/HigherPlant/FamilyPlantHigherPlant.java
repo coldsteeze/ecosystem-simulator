@@ -2,7 +2,7 @@ package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IFamilyPlant;
 
-
+//Семейства для высших растений
 public enum FamilyPlantHigherPlant implements IFamilyPlant {
 
     // Семейства папоротниковых

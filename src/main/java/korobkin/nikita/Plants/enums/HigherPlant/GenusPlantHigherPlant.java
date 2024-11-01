@@ -2,7 +2,7 @@ package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IGenusPlant;
 
-
+//Роды для высших растений
 public enum GenusPlantHigherPlant implements IGenusPlant {
 
     // Роды для семейства Полиподиевые
@@ -141,5 +141,10 @@ public enum GenusPlantHigherPlant implements IGenusPlant {
 
     public FamilyPlantHigherPlant getFamily() {
         return family;
+    }
+
+    @Override
+    public String getEnumName() {
+        return this.name();
     }
 }

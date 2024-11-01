@@ -2,6 +2,7 @@ package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IPlantClass;
 
+//Классы низших растений
 public enum ClassLowerPlant implements IPlantClass {
     //Классы зеленых водорослей
     CHLOROPHYCEAE("Хлорофициевые",

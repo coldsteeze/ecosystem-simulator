@@ -3,6 +3,7 @@ package korobkin.nikita.Plants.enums.LowerPlant;
 import korobkin.nikita.Plants.enums.SubkingdomPlant;
 import korobkin.nikita.Plants.interfacesPlant.IDivisionPlant;
 
+//Отделы низших растений
 public enum DivisionPlantLowerPlant implements IDivisionPlant {
     CHLOROPHYTA("Зеленые водоросли",
             "Фотосинтезирующие организмы, обитающие как в пресных, так и в морских водах.",

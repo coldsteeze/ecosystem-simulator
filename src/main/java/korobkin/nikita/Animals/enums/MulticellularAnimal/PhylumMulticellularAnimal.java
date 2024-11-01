@@ -4,6 +4,7 @@ package korobkin.nikita.Animals.enums.MulticellularAnimal;
 import korobkin.nikita.Animals.enums.SubkingdomAnimal;
 import korobkin.nikita.Animals.interfacesAnimal.IPhylumAnimal;
 
+//Типы многоклеточных животных
 public enum PhylumMulticellularAnimal implements IPhylumAnimal {
     CHORDATA("Хордовые", "Животные, имеющие хорду на каком-то этапе развития.", SubkingdomAnimal.MULTICELLULAR),
     ARTHROPODA("Членистоногие", "Животные с внешним скелетом и сегментированным телом.", SubkingdomAnimal.MULTICELLULAR),

@@ -2,7 +2,7 @@ package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IOrderPlant;
 
-
+//Порядки высших растений
 public enum OrderHigherPlant implements IOrderPlant {
     //Порядки папоротниковых
     POLYPODIALES("Полиподиевые",

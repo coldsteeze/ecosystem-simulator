@@ -2,6 +2,7 @@ package korobkin.nikita.Plants.enums.HigherPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IPlantClass;
 
+//Классы для высших растений
 public enum ClassHigherPlant implements IPlantClass {
     //Классы папоротниковидных
     POLYPODIOPSIDA("Папоротниковые",

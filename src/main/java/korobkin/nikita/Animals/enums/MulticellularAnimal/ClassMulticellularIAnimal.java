@@ -2,6 +2,7 @@ package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
 import korobkin.nikita.Animals.interfacesAnimal.IAnimalClass;
 
+//Классы для многоклеточных животных
 public enum ClassMulticellularIAnimal implements IAnimalClass {
     // Классы для типа Хордовые
     MAMMALIA("Млекопитающие", "Теплокровные животные с волосами и молочными железами.", PhylumMulticellularAnimal.CHORDATA),

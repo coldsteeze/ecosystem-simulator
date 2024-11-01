@@ -1,10 +1,10 @@
 package korobkin.nikita;
 
-
+// Класс, предназначенный для задания климатических условий
 public class PlantClimate {
-    private final double temperature; // Температура в градусах Цельсия
-    private final double humidity; // Влажность в процентах
-    private final double waterAvailability; // Доступная вода в литрах/м²
+    private final double temperature;
+    private final double humidity;
+    private final double waterAvailability;
 
     public PlantClimate(double temperature, double humidity, double waterAvailability) {
         this.temperature = temperature;

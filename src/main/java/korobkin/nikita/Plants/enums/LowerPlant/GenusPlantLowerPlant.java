@@ -2,6 +2,7 @@ package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IGenusPlant;
 
+//Роды для низших растений
 public enum GenusPlantLowerPlant implements IGenusPlant {
 
     // Род для семейства Вольвоковые
@@ -56,5 +57,10 @@ public enum GenusPlantLowerPlant implements IGenusPlant {
 
     public FamilyPlantLowerPlant getFamily() {
         return family;
+    }
+
+    @Override
+    public String getEnumName() {
+        return this.name();
     }
 }

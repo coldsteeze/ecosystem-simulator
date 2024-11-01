@@ -2,6 +2,7 @@ package korobkin.nikita.Animals.enums;
 
 import korobkin.nikita.Animals.interfacesAnimal.ISubkingdomAnimal;
 
+//Подцарство животные
 public enum SubkingdomAnimal implements ISubkingdomAnimal {
     SINGLECELLULAR("Одноклеточные", KingdomAnimal.ANIMALIA),
     MULTICELLULAR("Многоклеточные", KingdomAnimal.ANIMALIA),;

@@ -2,6 +2,7 @@ package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
 import korobkin.nikita.Animals.interfacesAnimal.IOrderAnimal;
 
+//Порядки для многоклеточных животных
 public enum OrderMulticellularAnimal implements IOrderAnimal {
     // Порядки для класса Млекопитающие
     CARNIVORA("Хищные", "Млекопитающие, питающиеся в основном мясом.", ClassMulticellularIAnimal.MAMMALIA),

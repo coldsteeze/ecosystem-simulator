@@ -31,8 +31,7 @@ public class GenusFinderImpl implements GenusFinder<Species<?>> {
             }
         }
 
-        // Если не найдено
-        //System.out.println("Род с именем '" + genusName + "' не найден.");
+        System.out.println("Род с именем '" + genusName + "' не найден.");
         return null;
     }
 }

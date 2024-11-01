@@ -2,6 +2,7 @@ package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IOrderPlant;
 
+//Порядки для низших растений
 public enum OrderPlantLowerPlant implements IOrderPlant {
     //Порядки зеленых водорослей
     VOLVOCALES("Вольвокальные",

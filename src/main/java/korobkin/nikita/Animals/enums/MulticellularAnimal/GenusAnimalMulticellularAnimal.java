@@ -2,6 +2,7 @@ package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
 import korobkin.nikita.Animals.interfacesAnimal.IGenusAnimal;
 
+//Роды для многоклеточных животных
 public enum GenusAnimalMulticellularAnimal implements IGenusAnimal {
     // Роды для семейства Кошачьи (Felidae)
     PANTHERA("Пантера", "Род крупных кошек, включая льва, тигра и леопарда.", FamilyMulticellularAnimal.FELIDAE),
@@ -36,6 +37,11 @@ public enum GenusAnimalMulticellularAnimal implements IGenusAnimal {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getEnumName() {
+        return this.name();
     }
 
     @Override

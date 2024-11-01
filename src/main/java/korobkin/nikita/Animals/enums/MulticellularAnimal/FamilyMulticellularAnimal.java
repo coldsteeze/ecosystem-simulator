@@ -2,7 +2,7 @@ package korobkin.nikita.Animals.enums.MulticellularAnimal;
 
 import korobkin.nikita.Animals.interfacesAnimal.IFamilyAnimal;
 
-
+//Семейства для многоклеточных животных
 public enum FamilyMulticellularAnimal implements IFamilyAnimal {
     // Семейства для порядка Хищные (Carnivora)
     FELIDAE("Кошачьи", "Семейство хищных, включающее львов, тигров, и домашних кошек.", OrderMulticellularAnimal.CARNIVORA),

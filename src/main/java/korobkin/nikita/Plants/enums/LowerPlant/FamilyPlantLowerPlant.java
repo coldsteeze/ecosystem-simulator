@@ -2,6 +2,7 @@ package korobkin.nikita.Plants.enums.LowerPlant;
 
 import korobkin.nikita.Plants.interfacesPlant.IFamilyPlant;
 
+//Семейства для низших растений
 public enum FamilyPlantLowerPlant implements IFamilyPlant {
     //Семейства зеленых водорослей
     VOLVOCACEAE("Вольвоковые",
