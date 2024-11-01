@@ -20,23 +20,27 @@ public class SpeciesLoader<T extends Species<?>> {
 
     // Метод для загрузки доступных видов из файла
     public List<T> loadAvailableSpeciesFromFile(String fileName) throws IOException {
-        return loadSpeciesFromFile(fileName);
+        return loadSpeciesFromResource(fileName);
     }
 
     // Метод для загрузки видов экосистемы из файла
     public List<T> loadEcosystemSpeciesFromFile(String fileName) throws IOException {
-        return loadSpeciesFromFile(fileName);
+        return loadSpeciesFromResource(fileName);
     }
 
-    public List<T> loadSpeciesFromFile(String fileName) throws IOException {
+    // Метод для загрузки видов из ресурсов
+    public List<T> loadSpeciesFromResource(String fileName) throws IOException {
         List<T> speciesList = new ArrayList<>();
-        File file = new File(fileName); // Используем абсолютный путь
 
-        if (!file.exists()) {
-            throw new IOException("Файл не найден: " + fileName);
+        // Получаем InputStream из ресурсов
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
+
+        // Проверяем, найден ли файл
+        if (inputStream == null) {
+            throw new IOException("Файл не найден в ресурсах: " + fileName);
         }
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
