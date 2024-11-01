@@ -13,7 +13,14 @@ public class FoodChainLoader {
     private Map<String, PlantClimate> plantClimateData = new HashMap<>(); // Для хранения климатических данных
 
     public void loadFoodChains(String filename) {
-      try  (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+        // Используем ClassLoader для доступа к ресурсам
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(filename);
+             BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
+
+            if (inputStream == null) {
+                System.out.println("Файл не найден: " + filename);
+                return;
+            }
 
             String line;
             boolean isPlantSection = false;
@@ -46,7 +53,7 @@ public class FoodChainLoader {
                     double waterAvailability = Double.parseDouble(parts[3].trim());
 
                     plantClimateData.put(organism, new PlantClimate(temperature, humidity, waterAvailability));
-                    System.out.println(organism + ": " + temperature + ", " + humidity + ", " + waterAvailability);
+
                 }
             }
         } catch (IOException e) {

@@ -77,10 +77,6 @@ public class EcosystemSimulation {
             // Проверка на хищника
             Set<String> prey = foodChainLoader.getPrey(genusName);
             if (!prey.isEmpty()) {
-                System.out.println(genusName);
-                for (String preyName : prey) {
-                    System.out.println(preyName);
-                }
                 boolean preyExists = prey.stream().anyMatch(preyName ->
                         ecosystemSpecies.values().stream().anyMatch(s ->
                                 s.getGenus().getName().equalsIgnoreCase(preyName))
