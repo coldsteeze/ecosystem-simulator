@@ -30,7 +30,7 @@ ecosystem simulator  project for SENLA
 
 1. **Склонируйте репозиторий**:
    ```bash
-   git clone https://github.com/ваш-репозиторий/ecosystem-simulator.git
+   https://github.com/coldsteeze/ecosystem-simulator.git
    cd ecosystem-simulator/ecosystem-simulator
 
 2. **Соберите проект с помощью Maven**:
